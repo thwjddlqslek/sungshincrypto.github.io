@@ -1,6 +1,6 @@
 ---
 layout : single
-title : Home
+title : "Home"
 ---
 #Joohee Lee
 I'm an Assistant Professor in the Department of Convergence Security Engineering at the Sungshin Women's University. 
