@@ -1,16 +1,13 @@
 ---
-title : "Publications"
-layout : categories
-permalink : /Publications/
-author_profile : true
-sidebar_main : true
+layout : post
+title : Publications
 ---
-
 Authors are listed in alphabetical order by last name. Corresponding authors are indicated.
+{: .fs-4 .fw-300 }
 
 ## 2023  
 - **Joohee Lee**, Jihoon Kwon, Ji Sun Shin : Efficient Continuous Key Agreement with Reduced
-Bandwidth from a Decomposable KEM. in IEEE Access, 2023.  &nbsp;<img src="https://img.shields.io/badge/IEEE Access-512BD4?style=flat-square&logo=IEEE Access&logoColor=blue"/>
+Bandwidth from a Decomposable KEM. in IEEE Access, 2023.  &nbsp;<img src="https://img.shields.io/badge/IEEE Access-512BD4?style=flat-square&logo=IEEE Access&logoColor=purple"/>
 {: .fs-4 .fw-300 }
 
 ---
@@ -52,7 +49,7 @@ Cryptology (ICISC) 2019.  &nbsp; <img src="https://img.shields.io/badge/ICISC-51
 Post-quantum Key Encapsulation Mechanism for IoT devices. in IEEE Access, 2018.  &nbsp; <img src="https://img.shields.io/badge/IEEE Access-512BD4?style=flat-square&logo=IEEE Access&logoColor=purple"/><br>
 - Saerom Park, Jaewook Lee, Jung Hee Cheon, **Joohee Lee**, Jaeyun Kim, and Junyoung Byun : 
 Security-preserving Support Vector Machine with Fully Homomorphic Encryption. in SafeAI@AAAI
-2019. <img src="https://img.shields.io/badge/AAAI-512BD4?style=flat-square&logo=AAAI&logoColor=purple"/>
+2019.  &nbsp; <img src="https://img.shields.io/badge/AAAI-512BD4?style=flat-square&logo=AAAI&logoColor=purple"/>
 {: .fs-4 .fw-300 }
 
 ---
