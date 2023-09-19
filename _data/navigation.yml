@@ -1,15 +1,15 @@
 # main links
 main:
   - title: "Home"
-    url: /categories/
+    url: /
   - title: "Students"
-    url: /categories/
+    url: /Students/
   - title: "Publications"
-    url: /categories/
+    url: /Publications/
   - title: "Projects"
-    url: /categories/
+    url: /Projects/
   - title: "Gallery"
-    url: /categories/
+    url: /Gallery/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
