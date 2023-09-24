@@ -21,9 +21,10 @@ sidebar_main : true
 
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: 1fr 100fr 1fr 100fr;
             grid-template-rows: repeat(3, 1fr);
-            gap: 10px;
+            gap: 20px;
+            grid-column-gap: 20px;
         }
 
         .grid-item {
@@ -33,53 +34,60 @@ sidebar_main : true
         }
 
         .grid-item img {
-            max-width: 200px;
-            max-height: 240px;
-            width: auto;
-            height: auto;
+            max-width: 160px;
+            max-height: 200px;
+            width: 160px;
+            height: 200px;
+        }
+
+        .grid-item p {
+            width: 250px;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
         }
     </style>
 </head>
 
 <body>
-    <!--     <div>
-        <img class="shadow" class="box" src="..\assets\images\김희주.jpg" height="18%" width="18%" align="left" />
-        <h5>김희주</h5><br>
-    </div>
-    <div>
-        <img class="shadow" class="box" src="..\assets\images\노현아.jpg" height="18%" width="18%" align="left" />
-        <h5>노현아</h5><br>
-    </div>
-    <div>
-        <img class="shadow" class="box" src="..\assets\images\이민주.jpg" height="18%" width="18%" align="left" />
-        <p>이민주</p><br>
-    </div>
-    <div>
-        <img class="shadow" class="box" src="..\assets\images\이은민.png" height="18%" width="18%" align="left" />
-        <p>이은민</p><br>
-    </div> -->
+    <br>
     <div class="grid-container">
         <!-- 2x3 그리드의 각 셀에 내용 추가 -->
         <div class="grid-item">
-            <img src="..\assets\images\노현아.jpg" alt="Image 1">
+            <img class="shadow" src="..\assets\images\노현아.jpg" alt="Image 1">
         </div>
-        <div class="grid-item"><h4>노현아</h4></div>
         <div class="grid-item">
-            <img src="..\assets\images\이은민.png" alt="Image 2">
+            <p><b>Hyun-a Noh</b></p>
+            <p>&lt;Research interest&gt;<br>homomorphic encryption, lattice-based post-quantum cryptography, IoT</p>
         </div>
-        <div class="grid-item">이은민</div>
         <div class="grid-item">
-            <img src="..\assets\images\이민주.jpg" alt="Image 3">
+            <img class="shadow" src="..\assets\images\이은민.png" alt="Image 2">
         </div>
-        <div class="grid-item">이민주</div>
         <div class="grid-item">
-            <img src="..\assets\images\김희주.jpg" alt="Image 4">
+            <p><b>Eunmin Lee</b></p>
+            <p>&lt;Research interest&gt;<br>
+            privacy, homomorphic encryption, post quantum cryptography</p>
         </div>
-        <div class="grid-item">김희주</div>
         <div class="grid-item">
-            <img src="..\assets\images\노현아.jpg" alt="Image 4">
+            <img class="shadow" src="..\assets\images\이민주.jpg" alt="Image 3">
         </div>
-        <div class="grid-item">김소정</div>
-        <div class="grid-item">6</div>
+        <div class="grid-item">
+            <p><b>Minju Lee</b></p>
+            <p>&lt;Research interest&gt;<br>Homomorphic encryption , Biometric authentication , Privacy , Deep learning</p>
+        </div>
+        <div class="grid-item">
+            <img class="shadow" src="..\assets\images\김희주.jpg" alt="Image 4">
+        </div>
+        <div class="grid-item">
+            <p><b>Heeju Kim</b></p>
+            <p>&lt;Research interest&gt;</p>
+        </div>
+        <div class="grid-item">
+            <img class="shadow" src="..\assets\images\김소정.jpg" alt="Image 5">
+        </div>
+        <div class="grid-item">
+            <p><b>Sojeong Kim</b></p>
+            <p>&lt;Research interest&gt;</p>
+        </div>
     </div>
 </body>

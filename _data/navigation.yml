@@ -2,7 +2,7 @@
 main:
   - title: "Home"
     url: /
-  - title: "Undergraduate Internship"
+  - title: "U.I"
     url: /Undergraduate Internship/
   - title: "Publications"
     url: /Publications/
