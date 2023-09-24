@@ -7,31 +7,45 @@ sidebar_main : true
 ---
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-    .shadow{
-        box-shadow: 3px 3px 3px lightgray;
-        border-radius: 3%;
-        margin-right: 15px;
-    }</style>
+        .shadow {
+            box-shadow: 3px 3px 3px lightgray;
+            border-radius: 3%;
+            margin-right: 15px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .grid-item {
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-<div>
-    <img class="shadow" class="box" src="..\assets\images\김희주.jpg" height="18%" width="18%" align="left"/>
-    <h5>김희주</h5><br>
-</div>
-<div>
-    <img class="shadow" class="box" src="..\assets\images\노현아.jpg" height="18%" width="18%" align="left"/>
-    <h5>노현아</h5><br>
-</div>
-<div>
-  <img class="shadow" class="box" src="..\assets\images\이민주.jpg" height="18%" width="18%" align="left"/>
-  <p>이민주</p><br>
-</div>
-  <div>
-  <img class="shadow" class="box" src="..\assets\images\이은민.png" height="18%" width="18%" align="left"/>
-  <p>이은민</p><br>
-</div>
+    <div>
+        <img class="shadow" class="box" src="..\assets\images\김희주.jpg" height="18%" width="18%" align="left" />
+        <h5>김희주</h5><br>
+    </div>
+    <div>
+        <img class="shadow" class="box" src="..\assets\images\노현아.jpg" height="18%" width="18%" align="left" />
+        <h5>노현아</h5><br>
+    </div>
+    <div>
+        <img class="shadow" class="box" src="..\assets\images\이민주.jpg" height="18%" width="18%" align="left" />
+        <p>이민주</p><br>
+    </div>
+    <div>
+        <img class="shadow" class="box" src="..\assets\images\이은민.png" height="18%" width="18%" align="left" />
+        <p>이은민</p><br>
+    </div>
