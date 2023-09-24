@@ -1,7 +1,7 @@
 ---
-title : "Students"
+title : "Undergraduate Internship"
 layout : categories
-permalink : /Students/
+permalink : /Undergraduate Internship/
 author_profile : true
 sidebar_main : true
 ---
@@ -18,22 +18,31 @@ sidebar_main : true
             border-radius: 3%;
             margin-right: 15px;
         }
+
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(3, 1fr);
             gap: 10px;
         }
+
         .grid-item {
-            border: 1px solid #ccc;
+            border: none;
             padding: 20px;
             text-align: center;
+        }
+
+        .grid-item img {
+            max-width: 200px;
+            max-height: 240px;
+            width: auto;
+            height: auto;
         }
     </style>
 </head>
 
 <body>
-    <div>
+    <!--     <div>
         <img class="shadow" class="box" src="..\assets\images\김희주.jpg" height="18%" width="18%" align="left" />
         <h5>김희주</h5><br>
     </div>
@@ -48,4 +57,29 @@ sidebar_main : true
     <div>
         <img class="shadow" class="box" src="..\assets\images\이은민.png" height="18%" width="18%" align="left" />
         <p>이은민</p><br>
+    </div> -->
+    <div class="grid-container">
+        <!-- 2x3 그리드의 각 셀에 내용 추가 -->
+        <div class="grid-item">
+            <img src="..\assets\images\노현아.jpg" alt="Image 1">
+        </div>
+        <div class="grid-item"><h4>노현아</h4></div>
+        <div class="grid-item">
+            <img src="..\assets\images\이은민.png" alt="Image 2">
+        </div>
+        <div class="grid-item">이은민</div>
+        <div class="grid-item">
+            <img src="..\assets\images\이민주.jpg" alt="Image 3">
+        </div>
+        <div class="grid-item">이민주</div>
+        <div class="grid-item">
+            <img src="..\assets\images\김희주.jpg" alt="Image 4">
+        </div>
+        <div class="grid-item">김희주</div>
+        <div class="grid-item">
+            <img src="..\assets\images\노현아.jpg" alt="Image 4">
+        </div>
+        <div class="grid-item">김소정</div>
+        <div class="grid-item">6</div>
     </div>
+</body>
