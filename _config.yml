@@ -19,13 +19,13 @@ locale                   : "ko-KR"
 title                    : "Prof. Joohee Lee"
 title_separator          : "|"
 subtitle                 : "Sungshin Crypto" # site tagline that appears below site title in masthead""
-name                     : "Joohee Lee"
+name                     : "Prof. Joohee Lee"
 description              : "--"
 url                      : "https://sungshincrypto.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/7.jpeg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/alice.jpg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -104,7 +104,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Joohee Lee"
+  name             : "Prof. Joohee Lee"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Sungshin Women's Universtiy, Convergence Security Engineering **Professor**"
   location         : "Seoul"

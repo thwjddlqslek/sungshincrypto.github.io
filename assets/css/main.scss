@@ -7,3 +7,4 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+@import url('https://fonts.google.com/share?selection.family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,300;1,500');
