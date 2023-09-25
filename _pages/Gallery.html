@@ -13,8 +13,43 @@ sidebar_main : true
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="gstyle.css" rel="stylesheet">
     <title>Document</title>
+    <style>
+        .container{
+            width: 400px;
+            margin: 0 auto;
+        }
+        .album {
+            width:400px;
+            height: 300px;
+            overflow: hidden;
+        }
+        .images{
+            position: relative;
+            display: flex;
+            height: 300px;
+        }
+        .img{
+            width: 400px; height: 300px;
+        }
+        .button, button:active, button:focus{
+            width: 50px; height: 25px; border:none;
+            color: white; background-color:skyblue; outline: none;
+        }
+        .button:hover{
+            background-color: lightgoldenrodyellow;
+        }
+        .button:disabled{
+            background-color: lightgray;
+        }
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -31,13 +66,11 @@ sidebar_main : true
                 <img src="..\assets\images\한국정보통신학회 춘계학술대회\slide03.jpg">
                 <img src="..\assets\images\한국정보통신학회 춘계학술대회\slide04.jpg">
             </div>
-            <button class="left">left</button>
-            <button class="right">right</button>
         </div>
-
+        <button class="left">left</button>
+        <button class="right">right</button>
     </div>
-
-
+    <script src="script.js"></script>
 </body>
 
 </html>
