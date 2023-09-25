@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Prof. Joohee Lee"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/alice.jpg" # path of avatar image, e.g. 
   bio              : "Sungshin Women's Universtiy, Convergence Security Engineering **Professor**"
   location         : "Seoul"
   email            : #
@@ -114,10 +114,10 @@ author:
       icon: "fas fa-fw fa-envelope-square"
       url: "jooheelee@sungshin.ac.kr"
     - label: "Google Scholar"
-      icon: "fas fa-fw fa-link"
+      icon: "fab fa-google fa-fw"
       url: "https://scholar.google.com/citations?user=CsZaTc8AAAAJ&hl=ko"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-twitter-square"
+      icon: "fab fa-fw fa-linkedin-in"
       url: "https://www.linkedin.com/in/joohee-lee-26baa5184/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
