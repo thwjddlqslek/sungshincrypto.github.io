@@ -15,37 +15,53 @@ sidebar_main : true
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container{
-            width: 400px;
+        .container {
+            width: 500px;
             margin: 0 auto;
         }
+
         .album {
-            width:400px;
-            height: 300px;
+            width: 500px;
+            height: 400px;
             overflow: hidden;
         }
-        .images{
+
+        .images {
             position: relative;
             display: flex;
-            height: 300px;
+            height: 400px;
+            transition: transform 0.5s;
         }
-        .img{
-            width: 400px; height: 300px;
+
+        .img {
+            width: 500px;
+            height: 400px;
         }
-        .button, button:active, button:focus{
-            width: 50px; height: 25px; border:none;
-            color: white; background-color:skyblue; outline: none;
+
+        .button,
+        button:active,
+        button:focus {
+            width: 42px;
+            height: 23px;
+            border: none;
+            color: white;
+            background-color: #512BD4;
+            outline: none;
         }
-        .button:hover{
+
+        .button:hover {
             background-color: lightgoldenrodyellow;
         }
-        .button:disabled{
+
+        .button:disabled {
             background-color: lightgray;
         }
-        .left{
+
+        .left {
             float: left;
         }
-        .right{
+
+        .right {
             float: right;
         }
     </style>
@@ -55,7 +71,6 @@ sidebar_main : true
 <body>
     <div>
         <h4>&bullet;&nbsp; 09/08/23 &nbsp;<a href="_posts\KIICE.html">KIICE - 한국정보통신학회</a></h4>
-        <h4>&bullet;&nbsp; 09/08/23 &nbsp;<a href="IWSEC.html">IWSEC 2023</a></h4>
     </div>
 
     <div class="container">
@@ -70,7 +85,65 @@ sidebar_main : true
         <button class="left">left</button>
         <button class="right">right</button>
     </div>
-    <script src="script.js"></script>
+    <br>
+    <div>
+        <h4>&bullet;&nbsp; 09/08/23 &nbsp;<a href="IWSEC.html">IWSEC 2023</a></h4>
+    </div>
+    <div class="container">
+        <div class="album">
+            <div class="images">
+                <img src="..\assets\images\IWSEC 2023\slide01.jpg">
+                <img src="..\assets\images\IWSEC 2023\slide02.jpg">
+                <img src="..\assets\images\IWSEC 2023\slide03.jpg">
+                <img src="..\assets\images\IWSEC 2023\slide04.jpg">
+                <img src="..\assets\images\IWSEC 2023\slide05.jpg">
+            </div>
+        </div>
+        <button class="left">left</button>
+        <button class="right">right</button>
+    </div>
+    <script>
+        let curPos = 0;
+        let positionValue = 0;
+        const IMAGE_WIDH = 500;
+
+        const leftBtn = document.querySelector(".left");
+        const rightBtn = document.querySelector(".right");
+        const images = document.querySelector(".images");
+
+        function next(){
+            if (curPos<3){
+                leftBtn.removeAttribute('disabled')
+                positionValue -= IMAGE_WIDH;
+                images.style.transform = `translateX(${positionValue}px)`;
+                curPos += 1;
+            }
+            if (curPos === 3){
+                rightBtn.setAttribute('disabled', 'true');
+            }
+        }
+
+        function prev(){
+            if (curPos>0){
+                rightBtn.removeAttribute('disabled')
+                positionValue += IMAGE_WIDH;
+                images.style.transform = `translateX(${positionValue}px)`;
+                curPos -= 1;
+            }
+            if (curPos === 0){
+                leftBtn.setAttribute('disabled', 'true');
+            }
+        }
+
+
+        function init() {
+            leftBtn.setAttribute('disabled', 'true');
+            rightBtn.addEventListener('click', next);
+            leftBtn.addEventListener('click', prev);
+        }
+
+        init();
+    </script>
 </body>
 
 </html>
