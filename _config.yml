@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Prof. Joohee Lee"
-  avatar           : "/assets/images/alicea.jpg" # path of avatar image, e.g. 
+  avatar           : "/assets/images/alice.jpg" # path of avatar image, e.g. 
   bio              : "Sungshin Women's Universtiy, Convergence Security Engineering **Professor**"
   location         : #"Seoul"
   email            : #
