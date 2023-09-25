@@ -9,58 +9,35 @@ sidebar_main : true
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="gstyle.css" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
     <div>
-    <h4>&bullet;&nbsp; 09/08/23 &nbsp;<a href="_posts\KIICE.html">KIICE - 한국정보통신학회</a></h4>
-    <h4>&bullet;&nbsp; 09/08/23 &nbsp;<a href="IWSEC.html">IWSEC 2023</a></h4>
-</div>
-
-<div class="section">
-    <input type="radio" name="slide01" checked>
-    <input type="radio" name="slide02">
-    <input type="radio" name="slide03">
-    <input type="radio" name="slide04">
-
-    <div class="slidewrap">
-        <ul class="slidelist">
-            <li>
-                <a>
-                    <lable for="slide04" class="left"></lable>
-                    <img src="assets\images\한국정보통신학회 춘계학술대회\slide01.jpg">
-                    <label for="slide02" class="right"></label>
-                </a>
-            </li>
-            <li>
-                <a>
-                    <lable for="slide01" class="left"></lable>
-                    <img src="assets\images\한국정보통신학회 춘계학술대회\slide02.jpg">
-                    <label for="slide03" class="right"></label>
-                </a>
-            </li>
-            <li>
-                <a>
-                    <lable for="slide02" class="left"></lable>
-                    <img src="assets\images\한국정보통신학회 춘계학술대회\slide03.jpg">
-                    <label for="slide04" class="right"></label>
-                </a>
-            </li>
-            <li>
-                <a>
-                    <lable for="slide03" class="left"></lable>
-                    <img src="assets\images\한국정보통신학회 춘계학술대회\slide04.jpg">
-                    <label for="slide01" class="right"></label>
-                </a>
-            </li>
-        </ul>
+        <h4>&bullet;&nbsp; 09/08/23 &nbsp;<a href="_posts\KIICE.html">KIICE - 한국정보통신학회</a></h4>
+        <h4>&bullet;&nbsp; 09/08/23 &nbsp;<a href="IWSEC.html">IWSEC 2023</a></h4>
     </div>
-</div>
 
+    <div class="container">
+        <div class="album">
+            <div class="images">
+                <img src="..\assets\images\한국정보통신학회 춘계학술대회\slide01.jpg">
+                <img src="..\assets\images\한국정보통신학회 춘계학술대회\slide02.jpg">
+                <img src="..\assets\images\한국정보통신학회 춘계학술대회\slide03.jpg">
+                <img src="..\assets\images\한국정보통신학회 춘계학술대회\slide04.jpg">
+            </div>
+            <button class="left">left</button>
+            <button class="right">right</button>
+        </div>
+
+    </div>
 
 
 </body>
+
 </html>

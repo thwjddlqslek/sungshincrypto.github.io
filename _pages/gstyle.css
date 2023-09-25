@@ -1,0 +1,33 @@
+.container{
+    width: 500px;
+    margin: 0 auto;
+}
+.album {
+    width:500px;
+    height: 350px;
+    overflow: hidden;
+}
+.images{
+    position: relative;
+    display: flex;
+    height: 350px;
+}
+.img{
+    width: 500px; height: 350px;
+}
+.button, button:active, button:focus{
+    width: 100px; height: 30px; border: none;
+    color: white; background-color:skyblue; outline: none;
+}
+.button:hover{
+    background-color: lightgoldenrodyellow;
+}
+.button:disabled{
+    background-color: lightgray;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
