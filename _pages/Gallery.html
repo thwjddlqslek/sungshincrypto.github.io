@@ -60,12 +60,12 @@ sidebar_main : true
             background-color: lightgray;
         }
 
-        .left {
-            float: left;
+        .prev {
+            float: prev;
         }
 
-        .right {
-            float: right;
+        .next {
+            float: next;
         }
     </style>
 
@@ -85,8 +85,8 @@ sidebar_main : true
                 <img src="..\assets\images\한국정보통신학회 춘계학술대회\slide04.jpg">
             </div>
         </div>
-        <button class="left">left</button>
-        <button class="right">right</button>
+        <button class="prev">prev</button>
+        <button class="next">next</button>
     </div>
     <br>
     <div>
@@ -101,47 +101,47 @@ sidebar_main : true
                 <img src="..\assets\images\IWSEC 2023\slide04.jpg">
             </div>
         </div>
-        <button class="left">left</button>
-        <button class="right">right</button>
+        <button class="prev">prev</button>
+        <button class="next">next</button>
     </div>
     <script>
         let curPos = 0;
         let positionValue = 0;
         const IMAGE_WIDH = 500;
 
-        const leftBtn = document.querySelector(".left");
-        const rightBtn = document.querySelector(".right");
+        const prevBtn = document.querySelector(".prev");
+        const nextBtn = document.querySelector(".next");
         const images = document.querySelector(".images");
 
         function next(){
             if (curPos<3){
-                leftBtn.removeAttribute('disabled')
+                prevBtn.removeAttribute('disabled')
                 positionValue -= IMAGE_WIDH;
                 images.style.transform = `translateX(${positionValue}px)`;
                 curPos += 1;
             }
             if (curPos === 3){
-                rightBtn.setAttribute('disabled', 'true');
+                nextBtn.setAttribute('disabled', 'true');
             }
         }
 
         function prev(){
             if (curPos>0){
-                rightBtn.removeAttribute('disabled')
+                nextBtn.removeAttribute('disabled')
                 positionValue += IMAGE_WIDH;
                 images.style.transform = `translateX(${positionValue}px)`;
                 curPos -= 1;
             }
             if (curPos === 0){
-                leftBtn.setAttribute('disabled', 'true');
+                prevBtn.setAttribute('disabled', 'true');
             }
         }
 
 
         function init() {
-            leftBtn.setAttribute('disabled', 'true');
-            rightBtn.addEventListener('click', next);
-            leftBtn.addEventListener('click', prev);
+            prevBtn.setAttribute('disabled', 'true');
+            nextBtn.addEventListener('click', next);
+            prevBtn.addEventListener('click', prev);
         }
 
         init();
