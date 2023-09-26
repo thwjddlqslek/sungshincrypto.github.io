@@ -15,17 +15,22 @@ sidebar_main : true
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .purple-text{
-            color:#8266D4;
+        .purple-text {
+            color: #8266D4;
         }
-        .container {
-            width: 500px;
+
+        .container1,
+        .container2 {
+            width: 503px;
             margin: 0 auto;
         }
 
         .album {
-            width: 500px;
+            width: 503px;
             height: 400px;
+            border-radius: 3%;
+            margin-right: 15px;
+            border: 2px solid #6C747A;
             overflow: hidden;
         }
 
@@ -37,23 +42,23 @@ sidebar_main : true
         }
 
         .img {
-            width: 500px;
+            width: 503px;
             height: 400px;
         }
 
         .button,
         button:active,
         button:focus {
-            width: 42px;
-            height: 23px;
+            width: 50px;
+            height: 25px;
             border: none;
             color: white;
-            background-color: #512BD4;
+            background-color: #9d85f3;
             outline: none;
         }
 
         .button:hover {
-            background-color: lightgoldenrodyellow;
+            background-color: #9d85f3;
         }
 
         .button:disabled {
@@ -61,11 +66,43 @@ sidebar_main : true
         }
 
         .prev {
-            float: prev;
+            float: left;
+            bottom: 20px;
+            /* 조정 가능한 여백 설정 */
+            width: 50px;
+            /* 버튼 크기 설정 */
+            height: 25px;
+            /* 버튼 크기 설정 */
+            border-radius: 10%;
+            /* 원 모양으로 만들기 */
+            background-color: #512BD4;
+            font-size: 13px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0px 4px 6px lightgray;
+            /* 그림자 추가 */
+            transition: background-color 0.3s, transform 0.3s;
         }
 
         .next {
-            float: next;
+            float: right;
+            bottom: 20px;
+            /* 조정 가능한 여백 설정 */
+            width: 50px;
+            /* 버튼 크기 설정 */
+            height: 25px;
+            /* 버튼 크기 설정 */
+            border-radius: 10%;
+            /* 원 모양으로 만들기 */
+            background-color: #512BD4;
+            color: white;
+            font-size: 13px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0px 4px 6px lightgray;
+            /* 그림자 추가 */
+            transition: background-color 0.3s, transform 0.3s;
         }
     </style>
 
@@ -76,7 +113,7 @@ sidebar_main : true
         <h4>&bullet;&nbsp; 09/08/23 &nbsp;<span class="purple-text">KIICE - 한국정보통신학회</span></h4>
     </div>
 
-    <div class="container">
+    <div class="container1">
         <div class="album">
             <div class="images">
                 <img src="..\assets\images\한국정보통신학회 춘계학술대회\slide01.jpg">
@@ -92,7 +129,7 @@ sidebar_main : true
     <div>
         <h4>&bullet;&nbsp; 09/08/23 &nbsp;<span class="purple-text">IWSEC 2023</span></h4>
     </div>
-    <div class="container">
+    <div class="container2">
         <div class="album">
             <div class="images">
                 <img src="..\assets\images\IWSEC 2023\slide01.jpg">
@@ -105,46 +142,50 @@ sidebar_main : true
         <button class="next">next</button>
     </div>
     <script>
-        let curPos = 0;
-        let positionValue = 0;
-        const IMAGE_WIDH = 500;
+        function initializeGallery(containerClass) {
+            let curPos = 0;
+            let positionValue = 0;
+            const IMAGE_WIDH = 500;
 
-        const prevBtn = document.querySelector(".prev");
-        const nextBtn = document.querySelector(".next");
-        const images = document.querySelector(".images");
+            const prevBtn = document.querySelector(`.${containerClass} .prev`);
+            const nextBtn = document.querySelector(`.${containerClass} .next`);
+            const images = document.querySelector(`.${containerClass} .images`);
 
-        function next(){
-            if (curPos<3){
-                prevBtn.removeAttribute('disabled')
-                positionValue -= IMAGE_WIDH;
-                images.style.transform = `translateX(${positionValue}px)`;
-                curPos += 1;
+            function next() {
+                if (curPos < 3 && !nextBtn.disabled) {
+                    prevBtn.removeAttribute('disabled')
+                    positionValue -= IMAGE_WIDH;
+                    images.style.transform = `translateX(${positionValue}px)`;
+                    curPos += 1;
+                }
+                if (curPos === 3) {
+                    nextBtn.setAttribute('disabled', 'true');
+                }
             }
-            if (curPos === 3){
-                nextBtn.setAttribute('disabled', 'true');
-            }
-        }
 
-        function prev(){
-            if (curPos>0){
-                nextBtn.removeAttribute('disabled')
-                positionValue += IMAGE_WIDH;
-                images.style.transform = `translateX(${positionValue}px)`;
-                curPos -= 1;
+            function prev() {
+                if (curPos > 0 && !prevBtn.disabled) {
+                    nextBtn.removeAttribute('disabled')
+                    positionValue += IMAGE_WIDH;
+                    images.style.transform = `translateX(${positionValue}px)`;
+                    curPos -= 1;
+                }
+                if (curPos === 0) {
+                    prevBtn.setAttribute('disabled', 'true');
+                }
             }
-            if (curPos === 0){
+
+
+            function init() {
                 prevBtn.setAttribute('disabled', 'true');
+                nextBtn.addEventListener('click', next);
+                prevBtn.addEventListener('click', prev);
             }
+
+            init();
         }
-
-
-        function init() {
-            prevBtn.setAttribute('disabled', 'true');
-            nextBtn.addEventListener('click', next);
-            prevBtn.addEventListener('click', prev);
-        }
-
-        init();
+        initializeGallery('container1');
+        initializeGallery('container2');
     </script>
 </body>
 
