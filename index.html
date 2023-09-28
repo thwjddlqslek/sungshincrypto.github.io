@@ -20,6 +20,20 @@ author_profile: true
             border-radius: 3%;
             margin-right: 15px;
         }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 10fr;
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            grid-column-gap: 20px;
+        }
+
+        .grid-item {
+            border: none;
+            padding: 10px;
+            text-align: center;
+        }
         
     </style>
 </head>
@@ -39,14 +53,17 @@ author_profile: true
                 cryptography, Cryptographic protocols, and Privacy-enhancing techniques.</p><br>
         </div>
     </div>
-    <div class="container">
+
     <h2>News</h2>
-    <p>&bullet; Aug. 30th: Our lab members received a Best Poster Award at IWSEC 2023 &nbsp;<img
-            src="https://img.shields.io/badge/IWSEC-512BD4?style=flat-square&logo=IEEE Access&logoColor=black" /></p>
-    <p>&bullet; Mar. 17th: A paper accepted by ACM CCS 2023 "AIM: Symmetric Primitive for Shorter Signatures with
-        Stronger Security" &nbsp;<img
-            src="https://img.shields.io/badge/ACM CCS-512BD4?style=flat-square&logo=IEEE Access&logoColor=black" /></p>
-        </div>
+    <div class="grid-container">
+        <div><img
+            src="https://img.shields.io/badge/IWSEC-512BD4?style=flat-square&logo=IEEE Access&logoColor=black" /></div>
+        <div>Aug. 30th : Our lab members received a Best Poster Award at IWSEC 2023</div>
+        <div><img
+            src="https://img.shields.io/badge/ACM CCS-512BD4?style=flat-square&logo=IEEE Access&logoColor=black" /></div>
+        <div>Mar. 17th : A paper accepted by ACM CCS 2023 <i>"AIM: Symmetric Primitive for Shorter Signatures with
+            Stronger Security"</i></div>
+    </div>
 </body>
 
 </html>
