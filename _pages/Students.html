@@ -13,6 +13,7 @@ sidebar_main : true
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        
         .shadow {
             box-shadow: 3px 3px 3px lightgray;
             border-radius: 3%;
@@ -48,6 +49,10 @@ sidebar_main : true
         }
         .small-font{
             font-size: 11px;
+        }
+        @media screen and (max-width: 768px) {
+        .grid-container {
+            grid-template-columns: 1fr 100fr; /* 2개의 열로 변경 */
         }
     </style>
 </head>
